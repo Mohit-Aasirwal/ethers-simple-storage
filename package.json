@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "5.7.2",
+    "fs-extra": "^11.1.1",
+    "ganache-cli": "^6.12.2",
+    "prettier": "^3.1.0",
+    "prettier-plugin-solidity": "^1.2.0",
+    "solc": "^0.8.21"
+  },
+  "scripts": {
+    "compile": "yarn solcjs  --bin --abi  --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.3"
+  }
+}
